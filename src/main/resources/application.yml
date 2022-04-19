@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: mysql://127.0.0.1:3306/lx_tmall_springboot?characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+  thymeleaf:
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+  http:
+    multipart:
+      max-file-size: 100Mb
+      max-request-size: 100Mb
+server:
+  context-path: /xl_tmall_springboot
+
